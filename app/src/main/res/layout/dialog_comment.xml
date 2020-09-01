@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AF000000">
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="280dp"
+        android:layout_height="390dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_ai_hr_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="老板，为什么要关闭小喵呢？"
+            android:textColor="#0A0A0A"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_submit"
+            android:layout_below="@+id/tv_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_submit"
+            android:layout_below="@+id/tv_title"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btn_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_arrow" />
+
+            <TextView
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_arrow"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_item_comment"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="其他原因"
+                android:textColor="@drawable/text_selector_comment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/btn_other"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_edit_shape">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tv_content_length"
+                    android:background="#00000000"
+                    android:gravity="left|top"
+                    android:hint="可以告诉小喵原因吗？"
+                    android:maxLength="100"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#999999"
+                    android:textColorHint="#9FA4B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_content_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="#9FA4B0"
+                    android:textSize="12sp"
+                    tools:text="0/100" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_submit_bg"
+            android:enabled="false"
+            android:text="提交"
+            android:textColor="@drawable/text_selector_comment_submit" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dialog_layout"
+        android:layout_alignRight="@+id/dialog_layout"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="-15dp"
+        android:background="@drawable/icon_dialog_close" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dialog_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-35dp"
+        android:src="@drawable/ai_hr_dialog_avatar" />
+</RelativeLayout>

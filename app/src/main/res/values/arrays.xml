@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="splash_desc">
+        <item>第一次写博客</item>
+        <item>觉得行，来个肯定吧</item>
+        <item>有不好的地方欢迎大神指点</item>
+        <item>记得分享哟</item>
+    </string-array>
+    <array name="splash_icon">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+    <array name="splash_bg">
+        <item>@color/light_green_500</item>
+        <item>@color/amber_500</item>
+        <item>@color/red_400</item>
+        <item>@color/blue_500</item>
+    </array>
+
+    <!-- tab -->
+    <string-array name="main_tab_text">
+        <item>"数据"</item>
+        <item>"案例"</item>
+        <item>"演示"</item>
+        <item>"会员"</item>
+        <item>"我的"</item>
+    </string-array>
+
+    <string-array name="second_list">
+        <item>eventBus</item>
+        <item>定位</item>
+        <item>gridView</item>
+        <item>viewPager</item>
+        <item>smoothBar</item>
+        <item>recycler</item>
+        <item>staggeredGrid</item>
+        <item>ganji</item>
+        <item>testSkip</item>
+        <item>dagger</item>
+        <item>camera</item>
+        <item>rootProject</item>
+        <item>vLayout</item>
+        <item>ConstraintLayout</item>
+        <item>buttonGradient</item>
+        <item>intro</item>
+        <item>intro2</item>
+        <item>flowLayout</item>
+        <item>douban</item>
+        <item>xrecycler</item>
+        <item>behavior</item>
+        <item>parallax</item>
+        <item>pull</item>
+        <item>JNI</item>
+        <item>ViewFlipper</item>
+        <item>TOPLIST</item>
+        <item>AUTOTEXT</item>
+        <item>POPUPWINDOW</item>
+        <item>Scheme</item>
+        <item>LAUNCH</item>
+        <item>SLIDE</item>
+        <item>DIVIDER</item>
+        <item>GLIDE</item>
+        <item>FACEDETECTOR</item>
+        <item>Marquee</item>
+        <item>HEADER</item>
+        <item>Contacts</item>
+        <item>ADDVIEW</item>
+        <item>TOPTOAST</item>
+        <item>BLOCKTAB</item>
+        <item>DIALOG</item>
+        <item>SVG</item>
+        <item>BANNER</item>
+        <item>TAB</item>
+        <item>TAB2</item>
+        <item>FRAME</item>
+        <item>Collapsing</item>
+        <item>Poster</item>
+        <item>Compose</item>
+        <item>DemoTab</item>
+        <item>BottomNavigation</item>
+        <item>NestedScrollView</item>
+        <item>TEST</item>
+        <item>BottomSheetDialog</item>
+        <item>BottomSheet</item>
+        <item>MAP</item>
+        <item>SlidingUpPanelLayout</item>
+        <item>RHeader</item>
+        <item>PROXY</item>
+        <item>WAVE</item>
+        <item>SERVICE</item>
+        <item>POPUP2</item>
+        <item>POPUP3</item>
+        <item>WEBVIEW</item>
+        <item>WEBVIEW2</item>
+        <item>NETWORK</item>
+        <item>HOLDER</item>
+    </string-array>
+</resources>

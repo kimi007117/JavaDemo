@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.ui.widget.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoAnchorPoint="0.5"
+    sothree:umanoDragView="@id/bottom_sheet_layout"
+    sothree:umanoInitialState="hidden"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/scroll_view"
+    sothree:umanoShadowHeight="0dp"
+    sothree:umanoShowFade="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff8bd2be"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bottom sheet" />
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入您的关键词"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#111111"
+            android:textColorHint="#9FA4B0"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_tab_selected_shape"
+            android:text="按钮" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_white_top_corner8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_pull_icon"
+            android:layout_width="43dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_up_toward" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。
+                        那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。" />
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:gravity="center"-->
+            <!--                            android:padding="10dp"-->
+            <!--                            android:text="那么我们首先我们需要" />-->
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</com.android.ui.widget.SlidingUpPanelLayout>
+

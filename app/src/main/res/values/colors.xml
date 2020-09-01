@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="titlebar_bg">#f239bc30</color>
+
+    <color name="gray">#e6e6e6</color>
+
+    <color name="item_border_color">#666666</color>
+    <color name="item_default_color">#22EEEEEE</color>
+    <color name="item_pressed_color">#CCCCCC</color>
+    <color name="item_activated_color">#77CEEE</color>
+
+
+
+    <color name="light_green_500">#8BC34A</color>
+    <color name="amber_500">#FBB106</color>
+    <color name="red_400">#D05660</color>
+    <color name="blue_500">#5979FB</color>
+
+    <color name="transparent">#00000000</color>
+
+
+</resources>

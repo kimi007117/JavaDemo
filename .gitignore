@@ -1,0 +1,23 @@
+# IntelliJ
+*.iml
+*/*.iml
+/.idea
+out/
+gen/
+
+# Gradle files
+build/
+*/build/
+.gradle
+
+# Local configuration file (sdk path, etc)
+/local.properties
+
+# CMake
+cmake-build-*/
+
+.DS_Store
+
+/captures
+.externalNativeBuild
+.cxx

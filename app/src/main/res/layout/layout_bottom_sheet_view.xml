@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_top_corner8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:id="@+id/bottom_pull_icon"
+            android:layout_width="43dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_up_toward" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。
+                        那么我们首先我们需要将这个计数器的状态传递给中间的Text，当点击按钮的时候，需要修改状态。" />
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="那么我们首先我们需要" />-->
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

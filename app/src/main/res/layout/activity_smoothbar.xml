@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.noe.rxjava.view.ScrollableViewPager
+        android:id="@+id/view_pager_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.noe.rxjava.view.ScrollableSmoothAppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dip">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="exitUntilCollapsed"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF">
+
+            <com.noe.rxjava.view.PagerTabLayout
+                android:id="@+id/bar_tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                app:tabShouldExpand="true"
+                app:tabTextColorSelected="#333333"
+                app:tabTextColorUnSelected="#999999"
+                app:tabTextSize="16sp"
+                app:tabUnderLineColor="#39BC30"
+                app:tabUnderLineHeight="2dp"
+                app:tabUnderLineWidth="16dp"/>
+        </LinearLayout>
+    </com.noe.rxjava.view.ScrollableSmoothAppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

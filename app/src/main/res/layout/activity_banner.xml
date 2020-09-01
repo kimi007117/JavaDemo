@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_ok"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在使用Python时，经常需要用到的很多第三方库，如图像处理库Pillow，MySQL驱动程序，Web框架Flask、科学计算Numpy等。可以使用pip一个一个安装，但比较麻烦，还需要来考虑兼容性。因此推荐使用Anaconda，这是一个基于Python的数据处理和科学计算平台，它已经内置了很多非常有用的第三方库，安装上Anaconda，就相当于把数十个第三方模块自动安装好了，非常简单易用
+
+作者：寒桥
+链接：https://www.jianshu.com/p/dbf20c6792fe
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在使用Python时，经常需要用到的很多第三方库，如图像处理库Pillow，MySQL驱动程序，Web框架Flask、科学计算Numpy等。可以使用pip一个一个安装，但比较麻烦，还需要来考虑兼容性。因此推荐使用Anaconda，这是一个基于Python的数据处理和科学计算平台，它已经内置了很多非常有用的第三方库，安装上Anaconda，就相当于把数十个第三方模块自动安装好了，非常简单易用
+
+作者：寒桥
+链接：https://www.jianshu.com/p/dbf20c6792fe
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在使用Python时，经常需要用到的很多第三方库，如图像处理库Pillow，MySQL驱动程序，Web框架Flask、科学计算Numpy等。可以使用pip一个一个安装，但比较麻烦，还需要来考虑兼容性。因此推荐使用Anaconda，这是一个基于Python的数据处理和科学计算平台，它已经内置了很多非常有用的第三方库，安装上Anaconda，就相当于把数十个第三方模块自动安装好了，非常简单易用
+
+作者：寒桥
+链接：https://www.jianshu.com/p/dbf20c6792fe
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_dot_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shape"
+        android:text="按钮"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

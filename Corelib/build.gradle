@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+apply from: "${getRootDir()}/gradle/jacoco.gradle"
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled = true
+            resValue 'string', 'BRANCH', '"' + getGitBranch() + '"'
+            resValue 'string', 'TAG', '"' + getGitTagName() + '"'
+            resValue 'string', 'DEV_TOOL', "${DEV_TOOL}"
+        }
+    }
+
+}
+
+// 获取分支
+def getGitBranch() {
+    return 'git symbolic-ref --short -q HEAD'.execute().text.trim()
+}
+
+// 获取tag名
+def getGitTagName() {
+    try {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--tags'
+            standardOutput = stdout
+        }
+        return stdout.toString().trim()
+    }
+    catch (ignored) {
+        return "1.0.0"
+    }
+}// 获取tag名
+def getGitTagName2() {
+    try {
+        return 'git describe --tags'.execute().text.trim()
+    }
+    catch (ignored) {
+        return "1.0.0"
+    }
+}
+
+//解决冲突 统一support版本
+configurations{
+    all*.exclude group: 'com.android.support', module: 'support-v13'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+}

@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.core">
+
+    <application>
+
+        <!-- 全局Context提供者 -->
+        <provider
+            android:name=".context.ApplicationContextProvider"
+            android:authorities="${applicationId}.contextprovider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".install.AppWatcherInstaller"
+            android:authorities="${applicationId}.installerprovider"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+</manifest>
