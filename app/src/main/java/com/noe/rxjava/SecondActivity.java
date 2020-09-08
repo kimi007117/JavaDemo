@@ -320,6 +320,9 @@ public class SecondActivity extends BaseActivity {
                         case 66:
                             ARouter.getInstance().build(ArouterUtils.ACTIVITY_HOLDER).navigation();
                             break;
+                        case 67:
+                            ARouter.getInstance().build(ArouterUtils.ACTIVITY_TEST_FRAGMENT).navigation();
+                            break;
                         default:
                             break;
                     }

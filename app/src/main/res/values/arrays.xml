@@ -96,5 +96,6 @@
         <item>WEBVIEW2</item>
         <item>NETWORK</item>
         <item>HOLDER</item>
+        <item>TEST FRAGMENT</item>
     </string-array>
 </resources>

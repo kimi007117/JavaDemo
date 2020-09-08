@@ -57,4 +57,5 @@ public class ArouterUtils {
     public static final String ACTIVITY_WEBVIEW2= "/rxjava/webview2/activity";
     public static final String ACTIVITY_NETWORK= "/rxjava/network/activity";
     public static final String ACTIVITY_HOLDER= "/rxjava/holder/activity";
+    public static final String ACTIVITY_TEST_FRAGMENT= "/rxjava/testfragment/activity";
 }
