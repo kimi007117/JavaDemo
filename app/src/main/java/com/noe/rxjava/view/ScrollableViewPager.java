@@ -2,8 +2,8 @@ package com.noe.rxjava.view;
 
 
 import android.content.Context;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 

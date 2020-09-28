@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetBehavior;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,8 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
 import com.android.core.util.ScreenUtils;
 import com.android.ui.util.SoftKeyBoardListener;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.noe.rxjava.R;
 import com.noe.rxjava.base.BaseBottomDialog;
 
@@ -168,7 +169,7 @@ public class BottomDialog extends BaseBottomDialog {
      * 取消拖拽
      */
     private void cancelDrag() {
-        View root = getDelegate().findViewById(android.support.design.R.id.design_bottom_sheet);
+        View root = getDelegate().findViewById(com.google.android.material.R.id.design_bottom_sheet);
         assert root != null;
         root.setBackgroundColor(Color.TRANSPARENT);
         BottomSheetBehavior behavior = BottomSheetBehavior.from(root);

@@ -1,25 +1,27 @@
 package com.noe.rxjava.view;
 
 import android.content.Context;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.AppBarLayout.Behavior;
-import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.AppBarLayout.Behavior;
 
 /**
  * Created by lijie on 2018/2/24.
  * Android v26版本AppBarLayout快速滑动导致回弹的解决方案
  * 解决当快速上下滚动，最后回到顶部时，AppBarLayout会出现回弹(bounce)的现象
  * 使用：
- * <android.support.design.widget.AppBarLayout
+ * <com.google.android.material.appbar.AppBarLayout
  * android:layout_width="match_parent"
  * android:layout_height="wrap_content"
  * app:layout_behavior="com.noe.rxjava.view.SmoothBehavior">
  * ......
- * </android.support.design.widget.AppBarLayout>
+ * </com.google.android.material.appbar.AppBarLayout>
  */
 
 public class SmoothBehavior extends Behavior {

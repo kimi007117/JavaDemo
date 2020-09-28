@@ -1,7 +1,7 @@
 package com.noe.rxjava;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.android.core.util.Logger;

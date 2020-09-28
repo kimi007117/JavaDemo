@@ -9,20 +9,16 @@
 -verbose
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
--dontwarn android.support.v4.**
--dontwarn android.support.v13.**
+
 -dontwarn android.webkit.WebViewClient
--dontwarn com.ganji.android.lib.util.UmengWrapper
 
 
 -keep class net.sourceforge.pinyin4j.** {*; }
--keep class com.ganji.im.parse.** {*; }
 
 # 热修复
 # 保留匿名内部类的$,否则补丁打包会Warn
 -keepattributes EnclosingMethod
 # 忽略assist到类中的代码
--dontwarn com.ganji.android.DontPreverify
 
 # tencent qq_browser sdk
 -keep class com.tencent.smtt.a.** { *;}
@@ -53,48 +49,6 @@
 -keepattributes JavascriptInterface
 -keepattributes *Annotation*
 
-#-keep class com.ganji.android.jsonrpc.GJJsonRpcServer { *; }
-#-keep class com.ganji.android.jsonrpc.JsonRpcRouter$GJNativeAPI { *; }
-#-keep class com.ganji.android.html5.Storage { *; }
-
--keep class com.ganji.android.R
--keep class com.ganji.android.R$*{
-    <fields>;
-    <methods>;
-}
-
--keep class com.ganji.android.comp.html5.jsonrpc.JsonRpcRouter$GJNativeAPI { *; }
--keep class com.ganji.android.comp.html5.LocalStorage { *; }
--keep class * extends com.ganji.android.comp.html5.jsonrpc.BaseJsonRpcServer {
-    <fields>;
-    <methods>;
-}
--keep class com.ganji.android.myinfo.control.PayWebActivity$* {
-    <fields>;
-    <methods>;
-}
-
--keep class com.ganji.android.control.WebViewActivity$* {
-    <fields>;
-    <methods>;
-}
-
--keep class com.ganji.android.house.data.AllTrendChartInfo {
-    <fields>;
-    <methods>;
-}
--keep class com.ganji.android.house.control.LargeChartActivity {
-    <fields>;
-    <methods>;
-}
--keep class com.ganji.android.myinfo.control.FeedbackWebActivity$* {
-    <fields>;
-    <methods>;
-}
--keep class com.ganji.android.publish.ui.* {
-    <fields>;
-    <methods>;
-}
 
 -keep class com.autonavi.mapapi.* {
     <fields>;
@@ -181,7 +135,6 @@
 -keep public class com.google.gson.**
 -keep public class com.google.gson.** {public private protected *;}
 
--keep public class com.ganji.android.trade.data.**
 
 ##---------------End: proguard configuration for Gson ----------
 
@@ -198,22 +151,16 @@
 -keep class com.dxhome.dm.gamecenter.** { *; }
 
 #baidu tieba
--keep class android.content.** {*;}
--keep class android.support.** {*;}
+
 -keep class com.baidu.** {*;}
 -keep class com.slidingmenu.lib.** {*;}
 -dontwarn android.content.**
--dontwarn android.support.**
 -dontwarn com.baidu.**
 -dontwarn com.slidingmenu.lib.**
 
 -keepclassmembers class * extends java.io.Serializable {
     private static final long serialVersionUID;
 }
-
-# gatsdk
--keep public class com.ganji.gatsdk.**
--keepclassmembers public class com.ganji.gatsdk.** { *; }
 
 
 # begin alipay
@@ -307,11 +254,6 @@
 -keep public class * extends android.text.method.BaseMovementMethod
 
 
-#兑吧混淆规则
--keep class com.ganji.android.control.CreditActivity$* {
-    <fields>;
-    <methods>;
-}
 -dontwarn okio.**
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
 -keepnames class com.levelup.http.okhttp.** { *; }
@@ -319,23 +261,8 @@
 -keepnames class com.squareup.okhttp.** { *; }
 -keepnames interface com.squareup.okhttp.** { *; }
 -keep public class android.wbsupport.**{*;}
--keep public class com.wuba.**{*;}
 
--keep public class com.ganji.android.dexannotation.**
 
--keep public class com.xxganji.gmacs.**{*;}
--keep public class com.android.gmacs.**{*;}
-
-#平台化
--keep public class * extends android.app.Instrumentation {public *;}#必须
--keep class com.ganji.android.platform.plugin.** {*; }
--keep class com.ganji.android.impl.downloader.** {*; }
-#-keep public class com.ganji.android.platform.plugin.annotation.** {*;}#可选
-#-keep public class com.ganji.android.platform.plugin.PluginThemeHelper {*;}#可选
-#-keep public class com.ganji.android.platform.plugin.localservice.LocalServiceManager {*;}#可选
-#-keep public class com.ganji.android.platform.plugin.util.NotificationHelper {*;}#可选
--keep public class com.alibaba.android.arouter.routes.**{*;}
--keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
 
 #极光混淆规则
 -dontoptimize
@@ -355,3 +282,6 @@
 -keep class com.baidu.** {*;}
 -keep class mapsdkvi.com.** {*;}
 -dontwarn com.baidu.**
+
+-keep class androidx.** {*;}
+-dontwarn androidx.**

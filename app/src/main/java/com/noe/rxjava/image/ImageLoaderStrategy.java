@@ -1,7 +1,7 @@
 package com.noe.rxjava.image;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by lijie24 on 2017/7/20.

@@ -1,6 +1,6 @@
 package com.noe.rxjava.refresh.listener;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.noe.rxjava.refresh.api.RefreshLayout;
 

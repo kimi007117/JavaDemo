@@ -1,6 +1,6 @@
 package com.noe.rxjava.network;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by lijie on 2020/7/28.

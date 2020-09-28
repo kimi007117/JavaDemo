@@ -1,8 +1,8 @@
 package com.noe.rxjava.widget;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;

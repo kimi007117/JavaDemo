@@ -3,7 +3,7 @@ package com.noe.rxjava.work;
 
 import android.content.Context;
 import android.os.Looper;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import androidx.work.Data;
 import androidx.work.Worker;

@@ -1,8 +1,8 @@
 package com.noe.rxjava.base;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialog;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 /**
  * Created by lijie on 2020/8/4.

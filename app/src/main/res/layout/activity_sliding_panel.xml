@@ -69,7 +69,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/icon_up_toward" />
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             <!--                            android:gravity="center"-->
             <!--                            android:padding="10dp"-->
             <!--                            android:text="那么我们首先我们需要" />-->
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 </com.android.ui.widget.SlidingUpPanelLayout>
 

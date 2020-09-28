@@ -4,8 +4,8 @@ import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.PopupWindowCompat;
+import androidx.annotation.NonNull;
+import androidx.core.widget.PopupWindowCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -13,8 +13,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
-
-import com.android.core.util.ScreenUtils;
 
 /**
  * Created by lijie on 2020-05-25.

@@ -1,10 +1,11 @@
 package com.noe.rxjava.refresh.util;
 
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.google.android.material.appbar.AppBarLayout;
 import com.noe.rxjava.refresh.api.RefreshKernel;
 import com.noe.rxjava.refresh.listener.CoordinatorLayoutListener;
 

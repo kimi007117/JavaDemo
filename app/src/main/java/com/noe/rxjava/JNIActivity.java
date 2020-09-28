@@ -1,12 +1,13 @@
 package com.noe.rxjava;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.noe.rxjava.util.ArouterUtils;
 import com.android.core.util.StringUtils;
+import com.noe.rxjava.util.ArouterUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

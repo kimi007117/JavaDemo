@@ -1,6 +1,6 @@
 package com.noe.rxjava.parallaxviewpager;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.widget.AbsListView;
 import android.widget.ScrollView;
 

@@ -1,7 +1,7 @@
 package com.noe.rxjava;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by 58 on 2016/7/29.
