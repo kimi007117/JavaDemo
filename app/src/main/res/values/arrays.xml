@@ -97,5 +97,6 @@
         <item>NETWORK</item>
         <item>HOLDER</item>
         <item>TEST FRAGMENT</item>
+        <item>TOOLBAR</item>
     </string-array>
 </resources>
