@@ -1,18 +1,16 @@
 package com.noe.rxjava;
 
-import android.os.Build;
 import android.os.Bundle;
-import com.google.android.material.appbar.CollapsingToolbarLayout;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.noe.rxjava.base.BaseActivity;
 import com.noe.rxjava.util.ArouterUtils;
-import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.util.ArrayList;
 
@@ -20,15 +18,15 @@ import java.util.ArrayList;
  * Created by 58 on 2016/8/5.
  */
 @Route(path = ArouterUtils.ACTIVITY_BAR)
-public class BarActivity extends AppCompatActivity {
+public class BarActivity extends BaseActivity {
 
     private ListView mListViewBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setStatus();
         setContentView(R.layout.activity_bar);
-        setStatusBarColorForKitkat();
         //给页面设置工具栏
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,20 +46,7 @@ public class BarActivity extends AppCompatActivity {
         }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(BarActivity.this, android.R.layout.simple_list_item_1, arrayList);
         mListViewBar.setAdapter(arrayAdapter);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        }
+
     }
 
-    public void setStatusBarColorForKitkat() {
-        /**
-         * Android4.4
-         */
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
-            this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            SystemBarTintManager tintManager = new SystemBarTintManager(this);
-            tintManager.setStatusBarTintEnabled(true);
-            tintManager.setStatusBarTintResource(getResources().getColor(R.color.colorPrimary));
-        }
-    }
 }
