@@ -3,17 +3,19 @@ package com.noe.rxjava.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.annotation.Nullable;
-import com.google.android.material.appbar.AppBarLayout;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.appbar.AppBarLayout;
 import com.noe.rxjava.R;
 import com.noe.rxjava.view.XRecyclerView;
 
@@ -76,6 +78,9 @@ public class XRecyclerPageFragment extends Fragment {
         mLinearLayoutManager = new LinearLayoutManager(mContext);
         //设置布局管理器
         recyclerView.setLayoutManager(mLinearLayoutManager);
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(mContext,mLinearLayoutManager.getOrientation());
+        itemDecoration.setDrawable(mContext.getResources().getDrawable(R.drawable.bg_divider));
+        recyclerView.addItemDecoration(itemDecoration);
         MyRecyclerAdapter adapter = new MyRecyclerAdapter(arrayList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLoadingListener(new XRecyclerView.LoadingListener() {

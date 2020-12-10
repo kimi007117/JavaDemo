@@ -3,12 +3,6 @@ package com.noe.rxjava;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
-import com.google.android.material.appbar.AppBarLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
@@ -16,8 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.noe.rxjava.fragment.RecyclerPageFragment;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.android.core.util.ScreenUtils;
+import com.google.android.material.appbar.AppBarLayout;
+import com.noe.rxjava.fragment.RecyclerPageFragment;
 import com.noe.rxjava.view.PagerTabLayout;
 import com.noe.rxjava.view.ScrollableSmoothAppBarLayout;
 import com.noe.rxjava.view.ScrollableViewPager;
@@ -28,6 +29,7 @@ import java.util.List;
 
 import me.henrytao.smoothappbarlayout.base.ObservableFragment;
 import me.henrytao.smoothappbarlayout.base.ObservablePagerAdapter;
+
 
 /**
  * Created by 58 on 2016/8/5.

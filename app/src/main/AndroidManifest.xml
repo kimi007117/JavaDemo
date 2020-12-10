@@ -311,6 +311,7 @@
         <activity android:name=".NetworkActivity" />
         <activity android:name=".HolderActivity" />
         <activity android:name=".ToolbarActivity" />
+        <activity android:name=".JSONActivity" />
     </application>
 
 </manifest>

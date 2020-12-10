@@ -2,15 +2,17 @@ package com.noe.rxjava.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.noe.rxjava.R;
 import com.noe.rxjava.adapter.CustomerItemAdapter;
@@ -53,7 +55,11 @@ public class DemoTabFragment extends BaseFragment {
     private void initView(View view) {
         mTextView = view.findViewById(R.id.tv_title);
         mRecyclerView = view.findViewById(R.id.recycle_view);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        LinearLayoutManager  layoutManager= new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(layoutManager);
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(getActivity(),layoutManager.getOrientation());
+        itemDecoration.setDrawable(getActivity().getResources().getDrawable(R.drawable.bg_divider));
+        mRecyclerView.addItemDecoration(itemDecoration);
         mCustomerItemAdapter = new CustomerItemAdapter(getActivity());
         mRecyclerView.setAdapter(mCustomerItemAdapter);
     }

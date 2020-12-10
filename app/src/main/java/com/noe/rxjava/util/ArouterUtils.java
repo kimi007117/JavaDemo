@@ -59,4 +59,5 @@ public class ArouterUtils {
     public static final String ACTIVITY_HOLDER= "/rxjava/holder/activity";
     public static final String ACTIVITY_TEST_FRAGMENT= "/rxjava/testfragment/activity";
     public static final String ACTIVITY_TOOLBAR= "/rxjava/toolbar/activity";
+    public static final String ACTIVITY_JSON= "/rxjava/json/activity";
 }

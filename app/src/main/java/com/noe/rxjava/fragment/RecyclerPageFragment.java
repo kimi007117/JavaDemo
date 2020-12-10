@@ -2,12 +2,6 @@ package com.noe.rxjava.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,22 +9,27 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.android.core.util.ScreenUtils;
 import com.noe.rxjava.R;
 
 import java.util.ArrayList;
 
 import butterknife.ButterKnife;
-import me.henrytao.smoothappbarlayout.SmoothAppBarLayout;
-import me.henrytao.smoothappbarlayout.base.ObservableFragment;
-import me.henrytao.smoothappbarlayout.base.Utils;
 
 
 /**
  * Created by lijie24 on 2016/11/28.
  */
 
-public class RecyclerPageFragment extends Fragment implements ObservableFragment {
+public class RecyclerPageFragment extends Fragment {
     private Context mContext;
     public static final String ARG_PAGE = "ARG_PAGE";
     public static final String ARG_HEIGHT = "ARG_HEIGHT";
@@ -93,19 +92,12 @@ public class RecyclerPageFragment extends Fragment implements ObservableFragment
         MyRecyclerAdapter adapter = new MyRecyclerAdapter(arrayList);
         adapter.addHeaderView(headerView);
         mRecyclerView.setAdapter(adapter);
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(mContext,layoutManager.getOrientation());
+        itemDecoration.setDrawable(mContext.getResources().getDrawable(R.drawable.bg_divider));
+        mRecyclerView.addItemDecoration(itemDecoration);
         mHeight = mHeight - ScreenUtils.getStatusBarHeight(mContext);
         mSwipeRefreshLayout.setProgressViewOffset(true, mHeight, mHeight + ScreenUtils.dipToPixel(mContext, 40));
 
-    }
-
-    @Override
-    public View getScrollTarget() {
-        return mRecyclerView;
-    }
-
-    @Override
-    public boolean onOffsetChanged(SmoothAppBarLayout smoothAppBarLayout, View target, int verticalOffset) {
-        return Utils.syncOffset(smoothAppBarLayout, target, verticalOffset, getScrollTarget());
     }
 
     int count = 0;

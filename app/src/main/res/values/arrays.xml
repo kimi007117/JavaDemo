@@ -98,5 +98,6 @@
         <item>HOLDER</item>
         <item>TEST FRAGMENT</item>
         <item>TOOLBAR</item>
+        <item>JSON</item>
     </string-array>
 </resources>
