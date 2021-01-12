@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.android.core.util.Logger;
 import com.noe.rxjava.base.BaseActivity;
 import com.noe.rxjava.util.ArouterUtils;
 
@@ -49,6 +50,7 @@ public class JSONActivity extends BaseActivity {
         mBtnJson1 = findViewById(R.id.btn_to_json1);
         mBtnJson2 = findViewById(R.id.btn_to_json2);
         initData();
+        Logger.i(mTag, "localName-->" + this.getLocalClassName()+";componentName-->"+this.getComponentName().getClassName());
     }
 
     private void initData() {
@@ -111,7 +113,7 @@ public class JSONActivity extends BaseActivity {
 //                    sb.append(jsonObject2.optString("tagName")).append("\n");
 
 
-                    sb.append(jsonObject2.toString().replace("\\/","/")).append("\n");
+                    sb.append(jsonObject2.toString().replace("\\/", "/")).append("\n");
 
                     mTvResult.setText(sb.toString());
                 } catch (JSONException e) {

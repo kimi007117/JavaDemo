@@ -24,10 +24,12 @@ import java.lang.reflect.Method;
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 
     protected Context mContext;
+    protected String mTag;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mTag = this.getClass().getSimpleName();
         mContext = this;
         setDefaultDisplay();
     }
