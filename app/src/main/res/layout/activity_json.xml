@@ -47,6 +47,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <com.android.ui.widget.ETextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android的屏幕碎片化严重，各种屏幕分辨率层出不穷，而在不同分辨率的屏幕上显示出一致的效果，是百度App的研发团队和视觉团队共同追求的目标。在百度App的Android开发中，TextView的行间距屏幕适配问题在研发和视觉之间纠缠已久。该图为热议页面的图文模板在三款设备上的显示效果。可以看到TextView的行间距在三款设备下的一致性表现不尽如人意，而这已成为日常UI开发以及视觉review过程中的一大痛点，降低了大家的工作效率。" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
