@@ -38,14 +38,13 @@ public class ETextView extends AppCompatTextView {
         // 获得视觉定义的每行文字的行高
         int lineHeight = (int) getTextSize();
 
-        SpannableStringBuilder ssb ;
+        SpannableStringBuilder ssb;
         if (text instanceof SpannableStringBuilder) {
             ssb = (SpannableStringBuilder) text;
-            // 设置LineHeightSpan
         } else {
             ssb = new SpannableStringBuilder(text);
-            // 设置LineHeightSpan
         }
+        // 设置LineHeightSpan
         ssb.setSpan(new ExcludeInnerLineSpaceSpan(lineHeight),
                 0, text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
